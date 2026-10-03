@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@theme {
+  --color-linen-50: #FAF8F5;
+  --color-linen-100: #F5F2EB;
+  --color-linen-200: #E7E5E4;
+  --color-linen-300: #D6D3D1;
+  --color-linen-400: #A8A29E;
+  --color-linen-500: #78716C;
+  --color-linen-600: #57534E;
+  --color-linen-700: #44403C;
+  --color-linen-800: #292524;
+  --color-linen-900: #1C1917;
+  --color-linen-950: #0C0A09;
+
+  --color-surface-0: #FFFFFF;
+  --color-surface-50: #FAF8F5;
+  --color-surface-100: #F5F2EB;
+  --color-surface-200: #E7E5E4;
+  --color-surface-300: #D6D3D1;
+  --color-surface-400: #A8A29E;
+  --color-surface-500: #78716C;
+  --color-surface-600: #57534E;
+  --color-surface-700: #44403C;
+  --color-surface-800: #292524;
+  --color-surface-900: #1C1917;
+  --color-surface-950: #0C0A09;
+
+  --color-border: #E7E5E4;
+
+  --color-textile-indigo: #1E2447;
+  --color-textile-indigo-dark: #0F1226;
+  --color-textile-purple: #381F68;
+  --color-textile-purple-dark: #220E38;
+  --color-textile-teal: #0D7C85;
+  --color-textile-turquoise: #14B8A6;
+  --color-textile-saffron: #D97706;
+  --color-textile-magenta: #C026D3;
+  --color-textile-coral: #F43F5E;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #FAF8F5;
+  color: #1C1917;
+  font-family: "Plus Jakarta Sans", Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.modal-open {
+  overflow: hidden !important;
+}
+
+/* Subtle Textile Weave Background Pattern */
+.bg-textile-pattern {
+  background-color: #FAF8F5;
+  background-image: radial-gradient(#1E2447 0.6px, transparent 0.6px), radial-gradient(#0D7C85 0.6px, #FAF8F5 0.6px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.bg-weave-lines {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(30, 36, 71, 0.02) 0px,
+    rgba(30, 36, 71, 0.02) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+}
+
+/* Sleek ERP Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6D3D1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A8A29E;
+}
+
+/* Glass & Texture Accents */
+.glass-header {
+  background: rgba(250, 248, 245, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Custom Table Row Transitions */
+.table-row-hover {
+  transition: all 0.15s ease-in-out;
+}
+
+.table-row-hover:hover {
+  background-color: #F5F2EB;
+}
