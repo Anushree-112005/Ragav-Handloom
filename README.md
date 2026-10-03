@@ -1,6 +1,6 @@
-# LOOMORA ERP — Handloom & Textile Enterprise Platform
+# Ragav ERP — Handloom & Textile Enterprise Platform
 
-> **LOOMORA ERP** is a full-stack, enterprise-grade **Handloom & Textile Management Platform** designed for Indian handloom manufacturing houses, master weaver clusters, and textile exporters. Built with high craftsmanship to avoid generic SaaS dashboard aesthetics, Loomora features a rich Indian textile color identity (Deep Indigo, Royal Purple, Rich Teal, Saffron Amber, and Warm Linen), connected to a high-performance **Python FastAPI** backend and a dedicated **PostgreSQL** relational database.
+> **Ragav ERP** is a full-stack, enterprise-grade **Handloom & Textile Management Platform** designed for Indian handloom manufacturing houses, master weaver clusters, and textile exporters. Built with high craftsmanship to avoid generic SaaS dashboard aesthetics, Ragav features a rich Indian textile color identity (Deep Indigo, Royal Purple, Rich Teal, Saffron Amber, and Warm Linen), connected to a high-performance **Python FastAPI** backend and a dedicated **PostgreSQL** relational database.
 
 ---
 
@@ -9,7 +9,7 @@
 ```mermaid
 graph TD
     A[React 19 + Tailwind CSS Frontend\nPort 5173] -->|Axios REST API / JWT| B[FastAPI Backend\nPort 8000]
-    B -->|SQLAlchemy ORM| C[(PostgreSQL 18 Database\nPort 5433 / loomora_erp)]
+    B -->|SQLAlchemy ORM| C[(PostgreSQL 18 Database\nPort 5433 / Ragav_erp)]
     B -->|Bcrypt / JWT Security| D[Auth & Session Layer]
     B -->|System Audit Service| E[Audit Logs & Login Activity]
     B -->|Streaming CSV Generator| F[CSV Export Engine]
@@ -25,7 +25,7 @@ graph TD
 
 ## 🎨 Textile Design Palette
 
-Loomora avoids the generic blue SaaS look in favor of an authentic Indian handloom aesthetic:
+Ragav avoids the generic blue SaaS look in favor of an authentic Indian handloom aesthetic:
 * **Deep Indigo (`#1E2447`)**: Primary navigation, headers, and brand anchors.
 * **Royal Purple (`#381F68`)**: Core brand accent, active states, and focus rings.
 * **Rich Teal (`#0D7C85`) & Turquoise (`#14B8A6`)**: Quality badges, natural dye indicators, and highlights.
@@ -38,11 +38,11 @@ Loomora avoids the generic blue SaaS look in favor of an authentic Indian handlo
 
 | Role | Email | Password | Permissions |
 | :--- | :--- | :--- | :--- |
-| **Super Administrator** | `admin@loomora.com` | `Admin@123` | Full system access across all modules |
-| **Production Manager** | `production@loomora.com` | `Prod@123` | Weaving floor, loom scheduling, artisans |
-| **Master Weaver** | `weaver@loomora.com` | `Weaver@123` | Assigned loom production & craft specs |
-| **Inventory Manager** | `inventory@loomora.com` | `Stock@123` | Yarn godowns, fabrics, reorder tracking |
-| **Quality Inspector** | `quality@loomora.com` | `Quality@123` | Silk Mark audits, defect reports, grades |
+| **Super Administrator** | `admin@Ragav.com` | `Admin@123` | Full system access across all modules |
+| **Production Manager** | `production@Ragav.com` | `Prod@123` | Weaving floor, loom scheduling, artisans |
+| **Master Weaver** | `weaver@Ragav.com` | `Weaver@123` | Assigned loom production & craft specs |
+| **Inventory Manager** | `inventory@Ragav.com` | `Stock@123` | Yarn godowns, fabrics, reorder tracking |
+| **Quality Inspector** | `quality@Ragav.com` | `Quality@123` | Silk Mark audits, defect reports, grades |
 
 *Note: The Login screen includes one-click "Demo Credentials" buttons to immediately populate test accounts.*
 
@@ -61,8 +61,8 @@ Loomora avoids the generic blue SaaS look in favor of an authentic Indian handlo
 1. Ensure your PostgreSQL cluster is active.
 2. In `backend/.env`, set your connection URL:
    ```env
-   DATABASE_URL=postgresql://postgres@localhost:5433/loomora_erp
-   SECRET_KEY=loomora_super_secret_handloom_textile_erp_key_2026_production
+   DATABASE_URL=postgresql://postgres@localhost:5433/Ragav_erp
+   SECRET_KEY=Ragav_super_secret_handloom_textile_erp_key_2026_production
    ACCESS_TOKEN_EXPIRE_MINUTES=1440
    ```
 3. Initialize the schema and seed enterprise textile records:
@@ -153,4 +153,4 @@ npm run build
 ---
 
 ## 📜 License
-Proprietary software developed for **Ragav Handloom / Loomora Solutions**. All rights reserved.
+Proprietary software developed for **Ragav Handloom / Ragav Solutions**. All rights reserved.
